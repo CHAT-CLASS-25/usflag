@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Create US Flag using JavaScript, CSS and HTML",
+  "steps": [
+    {
+      "file": "home.html",
+      "description": "Link to your **CSS file** and your **app.js file**. \n\n\nUsing the *\"defer\"* attribute in this script tag will ensure the page is fully loaded before the code is executed. ",
+      "line": 8
+    },
+    {
+      "file": "home.html",
+      "description": "Create a div for your main content\n\nWith the method we are using to create the flag, this is the only div you need in the body of your HTML file. ",
+      "line": 11
+    },
+    {
+      "file": "style.css",
+      "description": "Create variables that can be accessed by all your rulesets\n\nUsing **:root** to define reusable custom properties is a good way to prevent repetition in your CSS code.",
+      "line": 1
+    },
+    {
+      "file": "style.css",
+      "description": "Use pseudo-element to create the stripes.\n\nLearn more about [Pseudo-Elements](https://www.w3schools.com/css/css_pseudo_elements.asp)",
+      "line": 21
+    },
+    {
+      "file": "style.css",
+      "description": "Use a pseudo-class to insert the stars in the odd div elements\n\nLearn more about [Pseudo-Classes](https://www.w3schools.com/css/css_pseudo_classes.asp)",
+      "line": 41
+    }
+  ]
+}

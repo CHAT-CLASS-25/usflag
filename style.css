@@ -1,0 +1,45 @@
+:root{
+    --FlagWidth: 675px;
+    --FlagHeight: 320px;
+    --stripesHeight: calc(var(--FlagHeight) / 13);
+    --UnionJackHeight: calc(var(--FlagHeight) * 0.5385);
+    --UnionJackWidth: calc(calc(var(--FlagWidth) * 0.5385) * 0.76);
+}
+
+.dvFlag{
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--FlagWidth);
+    height: var(--FlagHeight);
+    position: relative;
+}
+
+.dvStripe{
+    width: 100%;
+    height: var(--stripesHeight);
+
+    &:nth-child(odd){
+        background-color: red;
+    }
+}
+
+.dvUnionJack{
+    display: flex;
+    flex-wrap: wrap;
+    width: var(--UnionJackWidth);
+    height: var(--UnionJackHeight);
+    background-color: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.dvStar{
+    width: calc(var(--UnionJackWidth) / 11);
+    height: calc(var(--UnionJackHeight) / 9);
+
+    &:nth-child(odd)::before{
+        content:"✭";
+        color: white;
+    }
+}
