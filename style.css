@@ -2,8 +2,8 @@
     --FlagWidth: 675px;
     --FlagHeight: 320px;
     --stripesHeight: calc(var(--FlagHeight) / 13);
-    --UnionJackHeight: calc(var(--FlagHeight) * 0.5385);
-    --UnionJackWidth: calc(calc(var(--FlagWidth) * 0.5385) * 0.76);
+    --FieldOfStarsHeight: calc(var(--FlagHeight) * 0.5385);
+    --FieldOfStarsWidth: calc(calc(var(--FlagWidth) * 0.5385) * 0.76);
 }
 
 .dvFlag{
@@ -12,6 +12,7 @@
     width: var(--FlagWidth);
     height: var(--FlagHeight);
     position: relative;
+    border: 2px solid black;
 }
 
 .dvStripe{
@@ -23,11 +24,11 @@
     }
 }
 
-.dvUnionJack{
+.dvFieldOfStars{
     display: flex;
     flex-wrap: wrap;
-    width: var(--UnionJackWidth);
-    height: var(--UnionJackHeight);
+    width: var(--FieldOfStarsWidth);
+    height: var(--FieldOfStarsHeight);
     background-color: blue;
     position: absolute;
     top: 0;
@@ -35,8 +36,8 @@
 }
 
 .dvStar{
-    width: calc(var(--UnionJackWidth) / 11);
-    height: calc(var(--UnionJackHeight) / 9);
+    width: calc(var(--FieldOfStarsWidth) / 11);
+    height: calc(var(--FieldOfStarsHeight) / 9);
 
     &:nth-child(odd)::before{
         content:"✭";

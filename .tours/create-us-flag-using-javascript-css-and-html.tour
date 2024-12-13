@@ -4,7 +4,7 @@
   "steps": [
     {
       "file": "home.html",
-      "description": "Link to your **CSS file** and your **app.js file**. \n\n\nUsing the *\"defer\"* attribute in this script tag will ensure the page is fully loaded before the code is executed. ",
+      "description": "Link to your **CSS file** and your **app.js file**. \n\n\nUsing the *\"defer\"* attribute in this script tag will ensure the page is fully loaded before the code is executed. \n*Learn more about [defer attribute](https://www.w3schools.com/tags/att_script_defer.asp)*",
       "line": 8
     },
     {
@@ -14,18 +14,58 @@
     },
     {
       "file": "style.css",
+      "description": "Use pseudo-element to create the stripes.\n\n*Learn more about [Pseudo-Elements](https://www.w3schools.com/css/css_pseudo_elements.asp)*",
+      "line": 21
+    },
+    {
+      "file": "style.css",
       "description": "Create variables that can be accessed by all your rulesets\n\nUsing **:root** to define reusable custom properties is a good way to prevent repetition in your CSS code.",
       "line": 1
     },
     {
       "file": "style.css",
-      "description": "Use pseudo-element to create the stripes.\n\nLearn more about [Pseudo-Elements](https://www.w3schools.com/css/css_pseudo_elements.asp)",
-      "line": 21
+      "description": "Calculate the width and height of the star divs relative to the size of the Field of Stars (blue section).\n\n*In order to get the stars to alternate, we are creating an 11 by 9 grid of divs and applying the style to the odd divs*",
+      "line": 38
     },
     {
       "file": "style.css",
       "description": "Use a pseudo-class to insert the stars in the odd div elements\n\nLearn more about [Pseudo-Classes](https://www.w3schools.com/css/css_pseudo_classes.asp)",
       "line": 41
+    },
+    {
+      "file": "app.js",
+      "description": "Create a variable to reference the main div in the HTML document\n\n***querySelector** is a special function that can be used to locate existing elements on the page. Learn more about it here - [querySelector Method](https://www.w3schools.com/jsref/met_document_queryselector.asp)* ",
+      "line": 2
+    },
+    {
+      "file": "app.js",
+      "description": "Create a function that would draw the flag on the page\n\nFunctions are used to group instructions or statements together that can be called (or ran) when needed. This particular function here creates the stripes in the flag and then creates the Field Of Stars and the 50 white stars.\n*Learn more about [Functions](https://www.w3schools.com/jsref/jsref_function.asp)*. ",
+      "line": 8
+    },
+    {
+      "file": "app.js",
+      "description": "Use a Loop Statement to create the stripes\n\nSince the dvStripe class has already been defined in the CSS, all we need to do is add that class to the div being created in the loop statement. \n*Learn more about the [For Loop Statement](https://www.w3schools.com/jsref/jsref_for.asp).*",
+      "line": 11
+    },
+    {
+      "file": "app.js",
+      "description": "Create the Field of Stars (blue rectangle section)\n\nThis div does not need a loop because we only need one element created. Just like we did with the stripes, we need to include the correct class in order for the css ruleset to be applied to this div",
+      "line": 18
+    },
+    {
+      "file": "app.js",
+      "description": "Create the stars using a loop statement\n\nWe are creating 50 stars for the design, but to achieve an alternating pattern, the logic effectively doubles the number of star <div> elements. Since our CSS defines an 11x9 grid (99 cells in total), the loop must run 99 times to populate the entire grid.",
+      "line": 22
+    },
+    {
+      "file": "app.js",
+      "description": "Append the Field Of Stars div to the MainFlagBody\n\nNow that the FieldOfStars and the 50 Stars have been created, we can add them to the flag design. ",
+      "line": 29
+    },
+    {
+      "file": "app.js",
+      "description": "Call the function to create the flag\n\nThis will ensure the function runs as soon as the page loads",
+      "line": 5
     }
   ]
 }
